@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Práctica 7 | Formularios con estilos CSS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#eff6ff,#dbeafe);
+color:#333;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#1d4ed8,#1e3a8a);
+color:white;
+text-align:center;
+padding:45px 20px;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:.95;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:40px auto;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:18px;
+margin-bottom:35px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+h2{
+color:#1d4ed8;
+border-left:6px solid #2563eb;
+padding-left:12px;
+margin-bottom:20px;
+}
+
+h3{
+color:#2563eb;
+margin-top:20px;
+margin-bottom:12px;
+}
+
+p{
+font-size:17px;
+text-align:justify;
+margin-bottom:15px;
+}
+
+.info{
+background:#eff6ff;
+border-left:6px solid #2563eb;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+.lista{
+background:#f8fafc;
+border:1px solid #d1d5db;
+border-radius:12px;
+padding:20px;
+margin-top:20px;
+}
+
+.lista ul{
+margin-left:25px;
+line-height:2;
+}
+
+.imagen{
+text-align:center;
+margin-top:20px;
+}
+
+.imagen img{
+width:100%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0 8px 18px rgba(0,0,0,.20);
+transition:.4s;
+}
+
+.imagen img:hover{
+transform:scale(1.03);
+}
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+.card{
+padding:22px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📄 Práctica 7</h1>
+
+<p>Creación de Formularios con Estilos CSS</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Descripción de la práctica</h2>
+
+<p>
+
+En esta práctica se desarrolla un formulario de registro utilizando HTML y CSS. El objetivo es combinar la estructura del formulario con un diseño visual moderno que facilite la captura de información por parte del usuario.
+
+<br><br>
+
+Además de crear los diferentes campos del formulario, se aplican estilos mediante CSS para mejorar la apariencia de los controles, utilizando colores, bordes redondeados, espacios internos y efectos visuales que hacen más agradable la interacción con la página.
+
+</p>
+
+<div class="info">
+
+<strong>Objetivo:</strong>
+
+Diseñar un formulario de registro funcional aplicando estilos CSS que mejoren su presentación, organización y experiencia de uso.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Funcionamiento del HTML</h2>
+
+<p>
+
+El formulario se crea mediante la etiqueta <strong>&lt;form&gt;</strong>, utilizando los atributos <strong>action</strong>, <strong>method</strong> y <strong>enctype</strong> para permitir el envío de información y la carga de archivos.
+
+</p>
+
+<p>
+
+Se emplean etiquetas <strong>&lt;label&gt;</strong> para identificar cada campo y diferentes tipos de <strong>&lt;input&gt;</strong>, como <strong>text</strong>, <strong>password</strong>, <strong>file</strong> y <strong>submit</strong>, además del atributo <strong>placeholder</strong>, que muestra un texto de ayuda mientras el usuario no escribe información.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Funcionamiento del CSS</h2>
+
+<p>
+
+Las reglas CSS permiten aplicar estilos a todos los controles del formulario mediante selectores específicos.
+
+</p>
+
+<p>
+
+Se utilizan propiedades como <strong>width</strong> para definir el ancho de los campos, <strong>padding</strong> para agregar espacio interno, <strong>border-radius</strong> para redondear las esquinas y <strong>box-sizing</strong> para mantener un tamaño uniforme.
+
+</p>
+
+<p>
+
+También se aplican estilos al botón de envío y el efecto <strong>:hover</strong>, que cambia su color cuando el usuario coloca el cursor sobre él, mejorando la interacción visual.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Etiquetas y propiedades utilizadas</h2>
+
+<div class="lista">
+
+<ul>
+
+<li><strong>&lt;form&gt;</strong> → Define el formulario.</li>
+
+<li><strong>&lt;label&gt;</strong> → Describe cada campo.</li>
+
+<li><strong>&lt;input&gt;</strong> → Crea cajas de texto, contraseña, archivos y botones.</li>
+
+<li><strong>placeholder</strong> → Muestra un texto de ayuda.</li>
+
+<li><strong>width</strong> → Define el ancho de los elementos.</li>
+
+<li><strong>padding</strong> → Agrega espacio interno.</li>
+
+<li><strong>border-radius</strong> → Redondea las esquinas.</li>
+
+<li><strong>box-sizing</strong> → Mantiene el tamaño correcto de los elementos.</li>
+
+<li><strong>:hover</strong> → Aplica un efecto al pasar el cursor.</li>
+
+<li><strong>background-color</strong> → Define el color de fondo.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Evidencia de la práctica</h2>
+
+<div class="imagen">
+
+<img src="practica7.jpg" alt="Práctica 7">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Conclusión</h2>
+
+<p>
+
+La combinación de HTML y CSS permite crear formularios visualmente atractivos y funcionales. Gracias al uso de estilos es posible mejorar la experiencia del usuario, haciendo que los formularios sean más claros, organizados y profesionales, sin afectar la estructura del contenido.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Práctica 7 • Desarrollo Web con HTML y CSS
+
+</footer>
+
+</body>
+
+</html>
